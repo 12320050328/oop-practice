@@ -27,8 +27,21 @@ public class Game {
 			
 			System.out.println(S[a].getName()+" attack "+W[b].getName()+" ...... ");
 			S[a].SmallFire(W[b]);
+			
+			a=(int)(Math.random()*3);
+			b=(int)(Math.random()*3);
+			
+			System.out.println(W[a].getName()+" attack "+W[b].getName()+" ...... ");
+			W[a].NewMoon(W[b]);
+			
+			a=(int)(Math.random()*3);
+			b=(int)(Math.random()*3);
+			
+			System.out.println(S[a].getName()+" attack "+S[b].getName()+" ...... ");
+			S[a].SmallFire(S[b]);
 		}
 
 	}
+
 
 }
